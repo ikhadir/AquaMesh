@@ -3,34 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Map Website</title>
+    <title>Interactive Map with AWS Location Service</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.877.0.min.js"></script>
+    <script src="https://unpkg.com/@aws-amplify/core"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Interactive Map Website</h1>
-        </div>
+        <h1>My AWS Location Service Map</h1>
     </header>
-    <main>
-        <div class="container">
-            <div id="map-container">
-                <div id="map"></div>
-            </div>
-            <div id="sidebar">
-                <div id="toolbar">
-                    <button id="btn1">Button 1</button>
-                    <button id="btn2">Button 2</button>
-                </div>
-                <div id="data-display">
-                    <h2>Data Information</h2>
-                    <p>This is some sample data information.</p>
-                </div>
-            </div>
+    <div class="container">
+        <div id="map"></div>
+        <div id="info">
+            <h2>Data Information</h2>
+            <p>Here you can display some data information.</p>
         </div>
-    </main>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>

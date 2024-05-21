@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Map with AWS Location Service</title>
+    <title>AquaMesh - IoT Water Monitoring</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>AquaMesh - BY IMAN</h1>
+        <h1>AquaMesh</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
         <div id="map">
@@ -17,7 +26,7 @@
         </div>
         <div id="info">
             <h2>Data Information</h2>
-            <p>Here you can display some data information.</p>
+            <canvas id="myChart"></canvas>
         </div>
     </div>
 </body>

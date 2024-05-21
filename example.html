@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Interactive Map Website</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+            <div id="sidebar">
+                <div id="toolbar">
+                    <button id="btn1">Button 1</button>
+                    <button id="btn2">Button 2</button>
+                </div>
+                <div id="data-display">
+                    <h2>Data Information</h2>
+                    <p>This is some sample data information.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -7,15 +7,50 @@ body {
 }
 
 header {
-    background-color: #39a3d1f8;
+    background-color: #4CAF50;
     color: white;
     padding: 1em 0;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #4CAF50;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
 .container {
     display: flex;
-    height: calc(100vh - 60px); /* Adjust according to header height */
+    height: calc(100vh - 120px); /* Adjust according to header height */
 }
 
 #map {

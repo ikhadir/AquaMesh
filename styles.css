@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust according to header height */
+}
+
+#map {
+    flex: 2;
+    height: 100%;
+    border-right: 2px solid #ddd;
+}
+
+#info {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    background-color: #fff;
+    overflow-y: auto;
+}
